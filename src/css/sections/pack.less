@@ -1,0 +1,109 @@
+.pack {
+    padding: 20px 0 40px;
+}
+.pack__title {
+
+}
+.pack__cardWrap {
+    .row-flex();
+    .to(1077px, {
+        justify-content: space-around;
+    });
+    
+}
+.pack__card {
+    .col();
+    .size(4);
+    background-color: rgba(187, 187, 187, 0.247);
+    text-align: center;
+    padding: 20px 0;
+    .to(1077px, {
+        .size(5);
+        &:last-child{
+            margin-top: 25px;
+        }
+        
+    });
+    .to(868px, {
+        .size(10);
+        &:first-child{
+            margin-bottom: 25px;
+        }
+    });
+}
+.pack__cardTitle {
+    color: @color_black;
+    font-size: 20px;
+}
+.pack__priceWrap {
+    background-color: @color_green;
+    color: @color_white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pack__dollar {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    background-color: @color_white;
+    mask-image: url('@{path_img}euro.svg');
+    margin-bottom: 21px;
+
+
+}
+.pack__price {
+    font-size: 43px;
+    line-height: 0;
+        span{
+            font-size: 15px;
+        };
+}
+.pack__cardDescWrap {
+    padding: 10px 55px;
+    .to(868px, {
+        padding: 10px 25px;
+    });
+    .to(315px, {
+        padding: 10px 11px;
+    });
+
+}
+.pack__cardDesc {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 12px 0;
+    justify-content: center
+   
+}
+.pack__mark {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    margin-right: 20px;
+ 
+}
+.pack__mark--yes {
+    mask-image: url('@{path_img}checked.svg');
+    background-color: @color_green;
+
+}
+.pack__mark--no {
+    mask-image: url('@{path_img}x.svg');
+    background-color: @color_gray;
+
+}
+.pack__text {
+    color: @color_gray;
+    line-height: 0;
+    margin: 0;
+    .to(868px, {
+        font-size: 20px;
+    });
+    .to(500px, {
+        font-size: 12px;
+    });
+}

@@ -1,0 +1,51 @@
+.stats {
+	background: url('@{path_img}backgrownd1.jpg') no-repeat top center;
+}
+
+.statItems{
+	min-height: 620px;
+	align-items: center;
+    text-align: center;
+    .row-flex();
+}
+
+.statItem{
+    .col();
+    .size(3);
+}
+
+.statItem__number {
+	color: #1d9d73;
+	font-size: 45px;
+	margin: 15px 0;
+}
+
+.statItem__text {
+	color: #333333;
+	font-size: 20px;
+}
+
+.statItem__icon {
+	border-radius: 50%;
+	background: #1d9d73;
+	width: 119px;
+	height: 119px;
+	margin: 17px auto;
+	line-height: 150px;
+}
+
+@media screen and (max-width: 890px){
+	.stats{
+		background: #dedfd7;
+		padding: 35px 0;
+	}
+
+	.statItems{
+		justify-content: center;
+	}
+
+	.statItem{
+		flex-basis: 270px;
+		width: auto;
+	}
+}

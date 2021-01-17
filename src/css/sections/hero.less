@@ -1,0 +1,55 @@
+.header {
+
+}
+.header__Wrap {
+    display: flex;
+
+}
+.header__logo {
+    background-image: url('@{path_img}Logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+    .to(626px, {
+        width: 700px;
+        height: 80px;
+
+    });
+}
+.header__navWrap {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+}
+
+.header__navItem {
+    color: @color_black;
+    text-decoration: none;
+    .to(626px, {
+        display: none;
+
+    });
+    
+    
+    &:hover{
+        color: @color_green;
+    }
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

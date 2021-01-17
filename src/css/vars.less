@@ -1,0 +1,31 @@
+@columns: 12;
+@offset: 30px;
+@offset_one_side: @offset / 2;
+
+@color_green: #1FA87A;
+@color_white: #fff;
+@color_black: #000;
+@color_gray: #707070;
+
+@path_img: ../../img/;
+
+@media1000: ~"screen and (max-width: 1000px)";
+@media800: ~"screen and (max-width: 800px)";
+@media500: ~"screen and (max-width: 500px)";
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -@offset_one_side;
+}
+
+.size(@n, @c: @columns, @o: @offset){
+	@w: 100% / @c * @n;
+	width: calc(@w - @o);
+}
+
+.ie11(@content){
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@content();
+	}
+}

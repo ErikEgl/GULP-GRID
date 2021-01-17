@@ -1,0 +1,86 @@
+.present {
+    padding: 50px 0;
+}
+.present__title {
+    font-size: 35px;
+    text-align: center;
+}
+.present__text {
+    color: @color_gray;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.present__cardsWarp {
+    .row-flex();
+    margin-top: 25px;
+    justify-content: space-around;
+    .from-to(500px, 980px, {
+        :last-child{
+            margin-top: 25px;
+        }
+    });
+   
+}
+.present__card {
+    
+    .col();
+    .size(3.8);
+    .from(981px, {
+        &:nth-child(-n+2){
+            margin-right: 20px;
+        }
+    });
+    .to(980px, {
+        .size(5.6);
+    });
+    .to(500px, {
+        .size(12);
+        &:nth-child(-n+2){
+            margin-bottom: 20px;
+        }
+    });
+
+
+
+}
+.present__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 240px;
+    border: 5px solid transparent;
+    &:hover{
+        border: 5px solid @color_green;
+    }
+    
+}
+.present__img--1 {
+    background-image: url("@{path_img}latestNews1.jpg"); 
+}
+.present__img--2 {
+    background-image: url("@{path_img}latestNews2.jpg");
+}
+.present__img--3 {
+    background-image: url("@{path_img}latestNews3.jpg");
+}
+.present__cardTitle {
+    color: @color_green;
+    .to(900px, {
+        font-size: 23px;
+    });
+    .to(500px, {
+        font-size: 28px;
+    });
+}
+.present__cardText {
+    color: @color_gray;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+
